@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDUK</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- botón para abrir el menú -->
+    <button class="menu-toggle" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- menú lateral -->
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close" onclick="toggleSidebar()">&times;</button>
+        <div class="sidebar-logo">
+            <img src="img/logo.png" alt="CEDUK">
+        </div>
+
+        <ul class="sidebar-list">
+            <li><a href="#carreras">Carreras</a></li>
+            <li><a href="#admision">Admisión</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#" onclick="toggleLogin(); toggleSidebar();">Ingresar</a></li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p>CEDUK Universidad</p>
+            <p>© 2025</p>
+        </div>
+    </div>
+
+    <!-- ooverlay oscuro -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <!-- nav fijo -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="img/logo.png" alt="CEDUK Logo">
+        </div>
+
+        <ul class="menu">
+            <li><a href="#carreras">Carreras</a></li>
+            <li><a href="#admision">Admisión</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button class="login-btn" onclick="toggleLogin()">Ingresar</button></li>
+        </ul>
+    </nav>
+
+    <!-- aquí va el hero -->
+    <div class="hero">
+        <div class="cursor-trail"></div>
+        <div class="cursor-trail"></div>
+        <div class="cursor-trail"></div>
+        <div class="cursor-trail"></div>
+        <div class="cursor-trail"></div>
+
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <h1>CEDUK</h1>
+        <p class="subtitle">Tu futuro empieza aquí</p>
+        <button class="boton"><span>Conocer más</span></button>
+    </div>
+
+    <!-- seccion de carreras -->
+    <div class="seccion" id="carreras">
+        <div class="grid">
+            <div class="card">
+                <span class="numero">01</span>
+                <h3>Ingeniería</h3>
+                <p>Crea soluciones que transforman el mundo</p>
+            </div>
+            <div class="card">
+                <span class="numero">02</span>
+                <h3>Negocios</h3>
+                <p>Lidera empresas hacia el futuro</p>
+            </div>
+            <div class="card">
+                <span class="numero">03</span>
+                <h3>Diseño</h3>
+                <p>Da forma a experiencias innovadoras</p>
+            </div>
+            <div class="card">
+                <span class="numero">04</span>
+                <h3>Derecho</h3>
+                <p>Construye una sociedad más justa</p>
+            </div>
+            <div class="card">
+                <span class="numero">05</span>
+                <h3>Salud</h3>
+                <p>Mejora la calidad de vida</p>
+            </div>
+            <div class="card">
+                <span class="numero">06</span>
+                <h3>Comunicación</h3>
+                <p>Conecta ideas con el mundo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- estadisticas -->
+    <div class="stats" id="seccion-de-estadisticas-principales">
+        <div class="stat">
+            <div class="stat-content">
+                <h2>Empleabilidad</h2>
+                <div class="stat-visual">
+                    <div class="circle">
+                        <div class="stat-number">95%</div>
+                    </div>
+                </div>
+                <p>Nuestros egresados encuentran<br>empleo en menos de 6 meses</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-content">
+                <h2>Estudiantes</h2>
+                <div class="stat-visual">
+                    <div class="circle">
+                        <div class="stat-number">5K+</div>
+                    </div>
+                </div>
+                <p>Profesionales exitosos<br>transformando el mundo</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-content">
+                <h2>Experiencia</h2>
+                <div class="stat-visual">
+                    <div class="circle">
+                        <div class="stat-number">24</div>
+                    </div>
+                </div>
+                <p>Años formando profesionistas<br>de primera</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- cta seccion -->
+    <div class="cta" id="admision">
+        <h2>Comienza tu historia</h2>
+        <button class="boton"><span>Solicitar información</span></button>
+    </div>
+
+    <!-- sección de ubicación -->
+    <div class="ubicacion" id="contacto">
+        <h2>Visítanos</h2>
+        <p>Conoce nuestras instalaciones</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8707568186755!2d-100.3299244!3d25.6755787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295f44df86705%3A0x9d47dffa61042d6f!2sCentro%20de%20Educaci%C3%B3n%20y%20Formaci%C3%B3n%20Acad%C3%A9mica%20-%20CEDUK!5e0!3m2!1ses-419!2smx!4v1761010225603!5m2!1ses-419!2smx" style="border:none;overflow:hidden;width:100%;height:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- galeria de vida universitaria -->
+    <div class="galeria">
+        <h2>Vida Universitaria</h2>
+        <p>Momentos que inspiran</p>
+        
+        <div class="galeria-grid">
+            <div class="media-item">
+                <img src="img/img1.jpg" alt="Campus">
+                <span class="media-tag">Foto</span>
+                <div class="media-overlay">
+                    <h3>Atención Profesional</h3>
+                    <p>¡Siempre una actitud cordial para los estudiantes!</p>
+                </div>
+            </div>
+            <div class="media-item">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F6312792748846641%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden;width:100%;height:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <span class="media-tag">Video</span>
+                <div class="media-overlay">
+                    <h3>Graduación</h3>
+                    <p>Momentos para rememorar</p>
+                </div>
+            </div>
+            <div class="media-item">
+                <img src="img/img2.jpg" alt="Estudiantes">
+                <span class="media-tag">Foto</span>
+                <div class="media-overlay">
+                    <h3>Instalaciones</h3>
+                    <p>Instalaciones de clase mundial</p>
+                </div>
+            </div>
+            <div class="media-item">
+                <img src="img/img3.jpg" alt="Trabajo en equipo">
+                <span class="media-tag">Foto</span>
+                <div class="media-overlay">
+                    <h3>Talleres</h3>
+                    <p>Aprendizaje en equipo y creativo</p>
+                </div>
+            </div>
+            <div class="media-item">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCEDUK.EDU%2Fvideos%2F447411754440784%2F&show_text=false&width=380&t=0" style="border:none;overflow:hidden;width:100%;height:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <span class="media-tag">Video</span>
+                <div class="media-overlay">
+                    <h3>Testimonios</h3>
+                    <p>Lo que dicen nuestros alumnos</p>
+                </div>
+            </div>
+            <div class="media-item">
+                <img src="img/img4.jpg" alt="Graduación">
+                <span class="media-tag">Foto</span>
+                <div class="media-overlay">
+                    <h3>Fácil Acceso</h3>
+                    <p>El inicio de tu futuro comienza aquí...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- aquí empieza el footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>CEDUK Universidad</h3>
+            <p>Centro de Educación y Formación Académica</p>
+            <p>Monterrey, Nuevo León, México</p>
+            <div class="footer-divider"></div>
+            <div class="footer-credits">
+                <p>Proyecto de Desarrollo Web con HTML5 y CSS3</p>
+                <p>Profesor: <strong>Abraham Rojas</strong></p>
+                <p>Desarrollado por: <strong>Hiram González</strong></p>
+                <p style="margin-top: 20px;">© 2025 CEDUK. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal para el login -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="login-modal">
+            <button class="close-btn" onclick="toggleLogin()">&times;</button>
+            <h2>¡Bienvenido!</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder=" " required>
+                    <label>Matricula</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder=" " required>
+                    <label>Contraseña</label>
+                </div>
+                <button type="submit" class="submit-btn"><span>Iniciar sesión</span></button>
+                <div class="forgot">¿Olvidaste tu contraseña?</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- javascript para animaciones -->
+    <script>
+        // funcion para login
+        function toggleLogin() {
+            const modal = document.getElementById('loginModal');
+            modal.classList.toggle('active');
+        }
+
+        // controla el cursor con estelas
+        const hero = document.querySelector('.hero');
+        const trails = document.querySelectorAll('.cursor-trail');
+        let mouseX = 0;
+        let mouseY = 0;
+        const positions = [];
+
+        // inicializar posiciones
+        trails.forEach(() => {
+            positions.push({ x: 0, y: 0 });
+        });
+
+        hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            mouseX = e.clientX - rect.left;
+            mouseY = e.clientY - rect.top;
+        });
+
+        function animateTrail() {
+            let x = mouseX;
+            let y = mouseY;
+
+            positions.forEach((pos, index) => {
+                pos.x += (x - pos.x) * (0.3 - index * 0.05);
+                pos.y += (y - pos.y) * (0.3 - index * 0.05);
+
+                trails[index].style.left = pos.x + 'px';
+                trails[index].style.top = pos.y + 'px';
+
+                x = pos.x;
+                y = pos.y;
+            });
+
+            requestAnimationFrame(animateTrail);
+        }
+
+        animateTrail();
+
+        hero.addEventListener('mouseenter', () => {
+            trails.forEach(trail => trail.style.opacity = '1');
+        });
+
+        hero.addEventListener('mouseleave', () => {
+            trails.forEach(trail => trail.style.opacity = '0');
+        });
+
+        document.getElementById('loginModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                toggleLogin();
+            }
+        });
+
+        // para el menú simple que amando por el grupo
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : 'auto';
+        }
+    </script>
+</body>
+</html>
